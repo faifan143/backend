@@ -48,7 +48,7 @@ const upload = multer({storage});
 
 const uploadFile = (req, res) => {
     const {file} = res.body;
-    const file_path = `public/assets/${file}`;  // Example path
+    const file_path = `public/assets/${file}`;
     res.sendFile(path.resolve(__dirname, file_path));
 };
 
